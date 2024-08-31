@@ -16,6 +16,6 @@ classDiagram
         +Amarilla
     }
 
-    Library "1" --  Jugador
-    Library "1" --  Partido
-    Library "1" --  Tarjetas
+    Liga "1" --  Jugador
+    Liga "1" --  Partido
+    Liga "1" --  Tarjetas
