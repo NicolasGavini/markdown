@@ -2,22 +2,18 @@
 classDiagram
     
     class Jugador {
-        +String Nombre
-        +String Numero Camiseta
-        +borrowBook(Book book)
-        +returnBook(Book book)
+        +Nombre
+        +Numero Camiseta
     }
 
     class Partido {
-        +String Fecha
-        +String Cancha
-        +addBook(Book book)
-        +removeBook(Book book)
+        +Fecha
+        +Cancha
     }
 
     class Tarjetas {
-        +String Roja
-        +List Amarilla
+        +Roja
+        +Amarilla
         +addMember(Member member)
     }
 
