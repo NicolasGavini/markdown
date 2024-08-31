@@ -1,27 +1,21 @@
 ```mermaid
 classDiagram
-    class Book {
-        +String title
-        +String author
-        +String isbn
-        +boolean isAvailable()
-    }
-
-    class Member {
+    
+    class Jugador {
         +String name
         +String memberId
         +borrowBook(Book book)
         +returnBook(Book book)
     }
 
-    class Librarian {
+    class Partido {
         +String name
         +String employeeId
         +addBook(Book book)
         +removeBook(Book book)
     }
 
-    class Library {
+    class Tarjetas {
         +String name
         +List books
         +List members
@@ -29,6 +23,6 @@ classDiagram
         +addMember(Member member)
     }
 
-    Library "1" -- "contains" Club
-    Library "1" -- "registers" Goles
-    Library "1" -- "manages" Asistencias
+    Library "1" -- "contains" Jugador
+    Library "1" -- "registers" Partido
+    Library "1" -- "manages" Tarjetas
