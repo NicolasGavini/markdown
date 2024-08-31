@@ -14,7 +14,6 @@ classDiagram
     class Tarjetas {
         +Roja
         +Amarilla
-        +addMember(Member member)
     }
 
     Library "1" --  Jugador
