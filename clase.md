@@ -2,27 +2,25 @@
 classDiagram
     
     class Jugador {
-        +String name
-        +String memberId
+        +String Nombre
+        +String Numero Camiseta
         +borrowBook(Book book)
         +returnBook(Book book)
     }
 
     class Partido {
-        +String name
-        +String employeeId
+        +String Fecha
+        +String Cancha
         +addBook(Book book)
         +removeBook(Book book)
     }
 
     class Tarjetas {
-        +String name
-        +List books
-        +List members
-        +List librarians
+        +String Roja
+        +List Amarilla
         +addMember(Member member)
     }
 
-    Library "1" -- "contains" Jugador
-    Library "1" -- "registers" Partido
-    Library "1" -- "manages" Tarjetas
+    Library "1" --  Jugador
+    Library "1" --  Partido
+    Library "1" --  Tarjetas
